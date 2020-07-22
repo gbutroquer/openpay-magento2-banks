@@ -19,6 +19,13 @@ define(
         return Component.extend({
             defaults: {
                 template: 'Openpay_Banks/payment/openpay-offline'
+            },
+            country: function() {
+                console.log('getCountry()', window.checkoutConfig.openpay_banks.country);
+                return window.checkoutConfig.openpay_banks.country;
+            },
+            getImagePse: function() {
+                return window.checkoutConfig.openpay_banks.image_pse;
             }
         });
     }

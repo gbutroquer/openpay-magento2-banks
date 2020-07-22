@@ -11,18 +11,30 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">    
-    <default>        
+    <default>
+        <csp>
+            <mode>
+                <storefront>
+                    <report_only>0</report_only>
+                </storefront>
+                <admin>
+                    <report_only>0</report_only>
+                </admin>
+            </mode>
+        </csp>        
         <payment>
             <openpay_banks>
                 <active>0</active>
                 <is_sandbox>1</is_sandbox>
+                <country>MX</country> 
                 <model>Openpay\Banks\Model\Payment</model>
                 <order_status>pending_payment</order_status>
                 <payment_action>order</payment_action>                
                 <title>Openpay (transferencia bancaria)</title>                
                 <sandbox_sk backend_model="Magento\Config\Model\Config\Backend\Encrypted" />                
                 <live_sk backend_model="Magento\Config\Model\Config\Backend\Encrypted" />                     
-                <deadline_hours>72</deadline_hours>                
+                <deadline_hours>72</deadline_hours>  
+                <iva>0</iva>              
                 <allowspecific>1</allowspecific>      
                 <specificcountry>MX</specificcountry>                                                                                                 
             </openpay_banks>

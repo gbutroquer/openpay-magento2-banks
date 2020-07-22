@@ -9,12 +9,17 @@ Módulo para pagos vía SPEI con Openpay para Magento2 (soporte hasta v2.3.0)
 
 **Para versiones de Magento < 2.3.0**
 ```bash    
-composer require openpay/magento2-banks:~2.0.0
+composer require openpay/magento2-banks:~3.0.0
 ```
 
 **Para versiones de Magento >= 2.3.0**
 ```bash    
-composer require openpay/magento2-banks:~2.3.0
+composer require openpay/magento2-banks:~3.4.0
+```
+
+**Para versiones de Magento >= 2.3.5**
+```bash    
+composer require openpay/magento2-banks:~4.0.0
 ```
 
 2. Después se procede a habilitar el módulo,actualizar y limpiar cache de la plataforma.
